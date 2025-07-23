@@ -67,5 +67,5 @@ RUN apt-get update \
     && find /var/cache/apt/archives /var/lib/apt/lists -not -name lock -type f -delete \
     && find /var/cache -type f -delete
 
-ENTRYPOINT ["/app/tools.sh"]
+CMD ["/app/tools.sh"]
 
